@@ -74,6 +74,7 @@ $(document).ready(function() {
 //
 //    });
     
+    
 // WORK GLITCH
     var bt = document.querySelectorAll('.werk')[0];
     var turbVal = { val: 0.000001 };

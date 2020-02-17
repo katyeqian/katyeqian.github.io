@@ -10,6 +10,49 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         
         <script src="../../script.js"></script>
+        <script>
+        // Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+    console.log("clicked");
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+//  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
         
 
     </head>
@@ -110,8 +153,8 @@
         <p>My concept behind the cover is inspired by surrealism, where Candide is digging (cultivating his garden, as that’s a key scene at the end of the novel) out of his own head which represents him essentially “throwing out” his pre-existing ideologies as his personal philosophies change along his journey. From the front of the over, the reader can’t tell what he’s digging out of, but if the cover is opened fully, the complete image is revealed.</p>
         </div>
     </div>
-       <img id="post" src="../../imgs/candide/mockup poster.png">
-       <img id="post" src="../../imgs/candide/cover.png">
+       <img id="post" src="../../imgs/candide/mockup poster.png" onclick="openModal();currentSlide(1)">
+       <img id="post" src="../../imgs/candide/cover.png" onclick="openModal();currentSlide(2)">
        
        <div class="img-grid">
             <div id="col">
@@ -164,6 +207,8 @@
             </div>
         </div>
         
+        
+        
          <svg id="break" height="3rem" width="80vw">
               <line x1="16vw" y1="3rem" x2="80vw" y2="3rem" style="stroke:rgb(0,0,0, 0.5);stroke-width:1" />
         </svg>
@@ -182,7 +227,169 @@
         <iframe id="post" width="1040" height="660" src="https://www.youtube.com/embed/RudY89N0Dc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
     
+<!--
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <img src="../../imgs/mockup%20poster.png" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="../../imgs/candide/cover.png" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="../../imgs/candide/pg1.png" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="../../imgs/candide/pg2.png" style="width: 100%">
+        </div>
+        
+        <div class="mySlides">
+          <img src="../../imgs/candide/pg3.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <img src="../../imgs/candide/pg4.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <img src="../../imgs/candide/pg5.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <img src="../../imgs/candide/pg6.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <img src="../../imgs/candide/final%20cover.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <img src="../../imgs/candide/poster.png" style="width:100%">
+        </div>
+            
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+-->
     </section>
+    
+    <svg id="break" height="3rem" width="80vw">
+              <line x1="16vw" y1="3rem" x2="80vw" y2="3rem" style="stroke:rgb(0,0,0, 0.5);stroke-width:1" />
+        </svg>
+        
+    <br><br>
+    
+    <div class="grid-container">
+            <div id="up">
+               <a href="../../PROJECTS/goldman/goldman.html">
+                <div class="shown">
+                <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
+
+                <div id="title">
+                    <h2>Goldman Sachs Internship</h2>
+                    <h3>(2019)</h3>
+                </div>
+                   </div>
+               <img src="../../imgs/thumbnails/GS.png">
+               
+               <div class="hide">
+                   <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
+                    <div id="title">
+                        <h2>Goldman Sachs Internship</h2>
+                        <h3>(2019)</h3>
+                    </div>
+                </div>
+                
+               </a>
+            </div>
+                
+            <div id="up">
+               <a href="../../PROJECTS/AIGA/aiga.html">
+               <div class="shown">
+             <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
+
+                <div id="title">
+                    <h2>AIGA Monsters</h2>
+                    <h3>(2019) video, web, print</h3>
+                </div>
+                </div>
+               <img src="../../imgs/slide.gif">
+                <div class="hide">
+                   <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
+                    <div id="title">
+                    <h2>AIGA Monsters</h2>
+                    <h3>(2019) video, web, print</h3>
+                </div>
+                </div>
+               </a>
+            </div>  
+               
+            <div id="up">
+               <a href="../../PROJECTS/Candide/candide.html">
+            <div class="shown">
+
+                <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
+
+                <div id="title">
+                    <h2>Candide or Optimism</h2>
+                    <h3>(2018) print, web, animation</h3>
+                </div>
+                </div>
+               <img src="../../imgs/thumbnails/candide-cover.png">
+               <div class="hide">
+                   <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
+                    <div id="title">
+                    <h2>Candide or Optimism</h2>
+                    <h3>(2018) print, web, animation</h3>
+                </div>
+                </div>
+               </a>
+            </div> 
+
+            <div id="low">
+                <a href="../../PROJECTS/Lynette/lynette.html">
+                <img src="../../imgs/thumbnails/mockup1.png">
+                <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
+               <div id="title">
+                    <h2>Lynette ITS</h2>
+                    <h3>(2018) ui, ux, user research</h3>
+                </div>
+                </a>
+            </div> 
+ 
+               
+            <div id="low">
+                <a href="../../PROJECTS/fun/fun.html">
+                <img src="../../imgs/drawing.png">
+                 <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
+
+               <div id="title">
+                    <h2>PLAY</h2>
+                    <h3>(2018) after effects, procreate</h3>
+                </div>
+                </a>
+            </div> 
+             
+            <div id="low">
+            <a href="../../PROJECTS/AIGA/aiga.html">
+                <img src="../../imgs/thumbnails/eggschange-thumbnail.gif">
+              <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
+
+                <div id="title">
+                        <h2>Eggschange</h2>
+                        <h3>(2018) ui, ux, user research</h3>
+                </div>
+                </a>
+            </div>
+        </div>
+        <footer>© 2020 katie q chen</footer>
     
     </body>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
