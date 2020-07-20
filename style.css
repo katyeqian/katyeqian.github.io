@@ -636,9 +636,7 @@ img.hover-shadow {
     }
     
     .svg-filters {
-	height: 0;
-	width: 0;
-	visibility: hidden;
+        opacity: 0;
         display: none !important;
     }
 
