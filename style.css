@@ -639,6 +639,10 @@ img.hover-shadow {
         opacity: 0;
         display: none !important;
     }
+    
+    body svg {
+        display: none !important;
+    }
 
     .grid-container {
         display: block;
