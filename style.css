@@ -611,28 +611,28 @@ img.hover-shadow {
     
        
     .werk {
-    -webkit-filter: none;
-	filter: none;
-}
+    -webkit-filter: none !important;
+	filter: none !important;
+    }
 
 .play {
-    -webkit-filter: none;
-	filter: none;
+    -webkit-filter: none !important;
+	filter: none !important;
 }
 
 .resume {
-    -webkit-filter: none;
-	filter: none;
+    -webkit-filter: none !important;
+	filter: none !important;
 }
 
 .abot {
-    -webkit-filter: none;
-	filter: none;
+    -webkit-filter: none !important;
+	filter: none !important;
 }
 
 .katie {
-    -webkit-filter: none;
-	filter: none;
+    -webkit-filter: none !important;
+	filter: none !important;
 }
     
     .grid-container {
