@@ -702,6 +702,9 @@ img.hover-shadow {
     
     .sub-grid {
         display: block;
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 80vw;
     }
     
     .img-grid {
