@@ -69,6 +69,9 @@ header {
     margin-top: 1rem;
 }
 
+#mobile {
+    display: none;
+}
 
 header h1 {
 /*    font-family: 'Major Mono Display', monospace;*/
@@ -609,30 +612,27 @@ img.hover-shadow {
 
 @media only screen and (max-width: 768px) {
     
+    #mobile {
+        display: block;
+    }
        
-    .werk {
-    -webkit-filter: none !important;
-	filter: none !important;
+    #main {
+        display: none;
+        
     }
-
-    .play {
-        -webkit-filter: none !important;
-        filter: none !important;
-    }
-
-    .resume {
-        -webkit-filter: none !important;
-        filter: none !important;
-    }
-
-    .abot {
-        -webkit-filter: none !important;
-        filter: none !important;
-    }
-
     .katie {
-        -webkit-filter: none !important;
-        filter: none !important;
+        display: none;
+    }
+    
+    #mobile .index h1 {
+        font-family: 'Alata', sans-serif;
+    color: #ff3d51;
+    font-size: 2rem;
+    float: left;
+    }
+    
+    #mobile #group {
+        float: right;
     }
     
     .svg-filters {
@@ -640,9 +640,7 @@ img.hover-shadow {
         display: none !important;
     }
     
-    body svg {
-        display: none !important;
-    }
+
 
     .grid-container {
         display: block;
