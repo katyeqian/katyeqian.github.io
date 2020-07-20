@@ -608,6 +608,33 @@ img.hover-shadow {
 
 
 @media only screen and (max-width: 768px) {
+    
+       
+    .werk {
+    -webkit-filter: none;
+	filter: none;
+}
+
+.play {
+    -webkit-filter: none;
+	filter: none;
+}
+
+.resume {
+    -webkit-filter: none;
+	filter: none;
+}
+
+.abot {
+    -webkit-filter: none;
+	filter: none;
+}
+
+.katie {
+    -webkit-filter: none;
+	filter: none;
+}
+    
     .grid-container {
         display: block;
         margin-top: 5rem;
