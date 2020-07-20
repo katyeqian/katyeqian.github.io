@@ -615,26 +615,33 @@ img.hover-shadow {
 	filter: none !important;
     }
 
-.play {
-    -webkit-filter: none !important;
-	filter: none !important;
-}
+    .play {
+        -webkit-filter: none !important;
+        filter: none !important;
+    }
 
-.resume {
-    -webkit-filter: none !important;
-	filter: none !important;
-}
+    .resume {
+        -webkit-filter: none !important;
+        filter: none !important;
+    }
 
-.abot {
-    -webkit-filter: none !important;
-	filter: none !important;
-}
+    .abot {
+        -webkit-filter: none !important;
+        filter: none !important;
+    }
 
-.katie {
-    -webkit-filter: none !important;
-	filter: none !important;
-}
+    .katie {
+        -webkit-filter: none !important;
+        filter: none !important;
+    }
     
+    .svg-filters {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+        display: none !important;
+    }
+
     .grid-container {
         display: block;
         margin-top: 5rem;
