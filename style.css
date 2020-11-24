@@ -621,80 +621,83 @@ img.hover-shadow {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
     
 
     nav a{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
-    color: black;
-    opacity: 0.7;
-    padding-right: 1em;
-    padding-top: 1rem;
-}
+        font-size: 2rem;
+    }
     
+    nav {
+        margin-top: 2rem;
+    }
+      
     #introduction {
-    font-family: 'Spectral', serif;
-    width: 100vw;
-    height: 100vh;
-/*    background: pink;*/
-    top: 0px;
-    left: 0px;
-    text-align: left;
+        text-align: left;
+    }
 
-}
-
-#introduction p {
-/*    padding-top: 0.5rem;*/
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 300;
-}
-
+    #introduction p {
+        font-size: 4.5rem;
+        line-height: 6rem;
+        width: 75%;
+    }
 
     .icon-scroll {
         display: none;
     }
 
-header {
-    padding-top: 1rem;
-    width: 95%;
-    background: blue;
-   padding-left: 2.5%;
-    padding-right: 2.5%;
-    position: relative;
-    display: inline;
+    header {
+        padding-top: 1rem;
+        width: 95%;
+       padding-left: 2.5%;
+        padding-right: 2.5%;
+    /*    position: relative;*/
+    /*    display: inline;*/
+        background: rgba(255,255,255,0.5);
 
+
+    }
+
+      header h1 {
+/*    font-family: 'Major Mono Display', monospace;*/
+/*    font-family: 'Playfair Display', serif;*/
+/*    font-family: 'Lora', serif;*/
+/*font-family: 'Noto Serif SC', serif;*/
+/*font-family: 'Gentium Basic', serif;*/
+    font-family: 'Alata', sans-serif;
+    color: #ff3d51;
+    font-size: 4rem;
+    float: left;
 }
+
     
-.werk {
-    -webkit-filter: none;
-	filter: none;
-}
+    .werk {
+        -webkit-filter: none;
+        filter: none;
+    }
 
-.play {
-    -webkit-filter: none;
-	filter: none;
-}
+    .play {
+        -webkit-filter: none;
+        filter: none;
+    }
 
-.resume {
-    -webkit-filter: none;
-	filter: none;
-}
+    .resume {
+        -webkit-filter: none;
+        filter: none;
+    }
 
-.abot {
-    -webkit-filter: none;
-	filter: none;
-}
+    .abot {
+        -webkit-filter: none;
+        filter: none;
+    }
 
-.katie {
-    -webkit-filter: none;
-	filter: none;
-}
+    .katie {
+        -webkit-filter: none;
+        filter: none;
+    }
     
     .grid-container {
         display: block;
@@ -702,7 +705,7 @@ header {
     }
     
     #title {
-    opacity: 1;
+        opacity: 1;
     }
     
     #dash {
