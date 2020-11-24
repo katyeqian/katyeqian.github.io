@@ -603,6 +603,10 @@ iframe#post {
 }
 */
 
+nav#mobile {
+    display: none;
+}
+
 img.demo {
   opacity: 0.6;
 }
