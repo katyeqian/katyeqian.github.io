@@ -202,11 +202,17 @@
         var myFullpage = new fullpage('#fullpage', {
 //            menu: '.nav',
 //            paddingTop: '50px',
-            anchors:['Introduction', 'Gallery']
+            anchors:['Introduction', 'Gallery'],
 //            sectionsColor: ['#fff', '#4BBFC3']
 //            scrollBar: true,
 //            afterRender: function(){
 //              new WOW().init();
+            
+             lazyLoading: true,
+            responsiveWidth: 1000,
+            afterResponsive: function(isResponsive){
+                
+            }
 //            
         });
         
