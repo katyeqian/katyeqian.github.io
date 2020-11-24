@@ -650,29 +650,13 @@ img.hover-shadow {
     }
 
     header {
-        padding-top: 1rem;
-        width: 95%;
-       padding-left: 2.5%;
-        padding-right: 2.5%;
-    /*    position: relative;*/
-    /*    display: inline;*/
-        background: rgba(255,255,255,0.5);
-
-
+        position: relative;
     }
 
-      header h1 {
-/*    font-family: 'Major Mono Display', monospace;*/
-/*    font-family: 'Playfair Display', serif;*/
-/*    font-family: 'Lora', serif;*/
-/*font-family: 'Noto Serif SC', serif;*/
-/*font-family: 'Gentium Basic', serif;*/
-    font-family: 'Alata', sans-serif;
-    color: #ff3d51;
-    font-size: 4rem;
-    float: left;
-}
-
+    header h1 {
+        font-size: 4rem;
+ 
+    }
     
     .werk {
         -webkit-filter: none;
@@ -706,11 +690,22 @@ img.hover-shadow {
     
     #title {
         opacity: 1;
+    
+    }
+      
+    #title h2{
+          font-size: 2rem;
+          line-height: 3rem;
+    }
+      
+    #title h3{
+          font-size: 1.5rem;
+          line-height: 2.5rem;
     }
     
     #dash {
-        margin-top: 2rem;
         opacity: 1;
+        transform: scale(2);
     }
     
     .grid-container div h2 {
@@ -718,16 +713,18 @@ img.hover-shadow {
     }
     
     .grid-container div #dash {
-        margin-top: 1rem;
+        margin-top: 1.2rem;
     }
     
     .grid-container div h3 {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
     
+/*
     .grid-container div#low #title {
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
+*/
     
 /*
     .grid-container div h3 {
@@ -770,11 +767,17 @@ img.hover-shadow {
         width: 100%;
     }
     
+    
     section #post {
         margin-bottom: 3rem;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         height: auto;
     }
+      
+    
+      footer {
+          display: none;
+      }
     
     
 /*
@@ -788,3 +791,4 @@ img.hover-shadow {
 */
     
 }
+
