@@ -175,6 +175,7 @@ button {
     border: none;
     cursor: pointer;
 	outline: inherit;
+    background: none;
 }
 
 .werk {
