@@ -14,57 +14,57 @@
         <script src="../../script.js"></script>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115030099-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115030099-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-  gtag('config', 'UA-115030099-2');
-</script>
+          gtag('config', 'UA-115030099-2');
+        </script>
 
         <script>
-        // Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-    console.log("clicked");
-}
+                    // Open the Modal
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+                console.log("clicked");
+            }
 
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+            // Close the Modal
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-//  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+            //  var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
     </script>
         
 
@@ -122,6 +122,7 @@ function showSlides(n) {
            <button class="resume"><a href="../../resumesummer2019.pdf" target="_blank">RESUME</a></button>
         </nav>
         </header>    
+<!--
         <nav id="mobile">
         <button class="index">
                <a href="index.html"><h1>katie q chen</h1></a>
@@ -132,6 +133,7 @@ function showSlides(n) {
            <button class="resume"><a href="resumesummer2019.pdf" target="_blank">RESUME</a></button>
         </nav>
     </nav>
+-->
 <!--
         <nav id="side">
            <button class="abot" id="abt">ABOUT</button>
