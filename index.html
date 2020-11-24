@@ -2,33 +2,33 @@
 <html>
     <head>
        <title>katie q chen</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="shortcut icon" type="image/png" href="imgs/favicon.png">
-
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+<!--        Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Playfair+Display|Work+Sans:300,400,500,600&display=swap" rel="stylesheet">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Major+Mono+Display|Roboto+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Alata|Gentium+Basic|Lora|Scheherazade|Noto+Serif+SC&display=swap" rel="stylesheet">
+<!--        JS and JQuery-->
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="script.js"></script>
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115030099-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-115030099-2');
-</script>
-
-    
+<!--        Wow JS animations-->
+         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="WOW-master/css/libs/animate.css">
+        <script src="WOW-master/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+<!--        full page hard scroll library-->
+        <link rel="stylesheet" type="text/css" href="fullPage.js-master/dist/fullpage.css">
+        <script type="text/javascript" src="fullPage.js-master/dist/fullpage.js"></script>
 
     </head>
     <body>
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+    
+      <header>
+         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
       <defs>
         <filter id="noise">
           <feTurbulence type="fractalNoise" baseFrequency="0.00001 0.00001" numOctaves="1" result="warp"></feTurbulence>
@@ -68,53 +68,28 @@
         </filter>
       </defs>
     </svg>
-      	
-<!--    <div id="home">-->
-      <header>
-       <button class="katie">
-               <a href="index.html"><h1>katie q chen</h1></a>
-        </button>
+          <div id="topbar">
+           <button class="katie"><a href="index.html"><h1>katie q chen</h1></a></button>
        <nav id="main">
-           <button class="werk"><a href="index.html">WORK</a></button>
-           <button class="play"><a href="about.html">ABOUT</a></button>
-           <button class="resume"><a href="resumesummer2019.pdf" target="_blank">RESUME</a></button>
+           <button class="werk"><a href="#Gallery">Work</a></button>
+           <button class="play"><a href="about.html">About</a></button>
+           <button class="resume"><a href="resumesummer2019.pdf" target="_blank">Resume</a></button>
         </nav>
-    </header>
-    
-    <nav id="mobile">
-        <button class="index">
-               <a href="index.html"><h1>katie q chen</h1></a>
-        </button>
-       <nav id="group">
-           <button class="werk"><a href="index.html">WORK</a></button>
-           <button class="play"><a href="about.html">ABOUT</a></button>
-           <button class="resume"><a href="resumesummer2019.pdf" target="_blank">RESUME</a></button>
-        </nav>
-    </nav>
-<!--
-        <nav id="side">
-           <button class="abot" id="abt"><a href="about.html">ABOUT</a></button>
-            <svg height="10" width="120">
-              <line x1="20" y1="0" x2="100" y2="0" style="stroke:rgb(0,0,0, 0.5);stroke-width:1" />
-            </svg>
--->
-<!--
-            <button class="linkedin">
-                <a href="https://www.linkedin.com/in/katie-chen-76907412b/"><img src="linkedin.svg"></a>
-            </button>
-            <button class="medium">
-                <a href="https://www.linkedin.com/in/katie-chen-76907412b/"><img src="med.svg"></a>
-            </button>
--->
-<!--        </nav>-->
-        
-<!--
-        
-        <div id="about">
-            <h1>hi,</h1>
-            <p>I'm a senior at Carnegie Mellon University studying Communication Design and HCI. Previously, I interned at Goldman Sachs in New York as a UX Designer and I will be returning for full time in the summer.</p>
         </div>
--->
+       </header>
+       
+        <div id="fullpage">
+<!--        <div class="section">-->
+        
+        <div id="introduction" class="section" data-anchor="introanchor">
+            <p>
+            Hi I'm <span class="color">Katie </span>😊 <br>New York City based UX Designer at <a href="https://design.gs.com/d/" target="_blank">Goldman Sachs</a> and recent <a href="https://design.cmu.edu/" target="_blank">Carnegie Mellon University</a> Design and HCI grad.
+            </p>
+<!--        </div>-->
+            <div class='icon-scroll'></div>
+        </div>
+        
+        <div class="section" data-anchor="gallery">
        <div class="grid-container">
             <div id="up">
                <a href="PROJECTS/goldman/goldman.html">
@@ -207,7 +182,7 @@
             </div> 
              
             <div id="low">
-            <a href="PROJECTS/Eggschange/eggschange.html">
+            <a href="PROJECTS/AIGA/aiga.html">
                 <img src="imgs/thumbnails/eggschange-thumbnail.gif">
               <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
 
@@ -220,8 +195,24 @@
         </div>
 
     <footer>© 2020 katie q chen</footer>
-<!--    </div>-->
+    </div>
+</div>
         
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+//            menu: '.nav',
+//            paddingTop: '50px',
+            anchors:['Introduction', 'Gallery']
+//            sectionsColor: ['#fff', '#4BBFC3']
+//            scrollBar: true,
+//            afterRender: function(){
+//              new WOW().init();
+//            
+        });
+        
+        
+        </script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     </body>
 </html>
