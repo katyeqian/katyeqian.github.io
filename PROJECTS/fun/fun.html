@@ -8,23 +8,18 @@
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Major+Mono+Display|Roboto+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Alata|Gentium+Basic|Lora|Scheherazade|Noto+Serif+SC&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         
         <script src="../../script.js"></script>
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115030099-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115030099-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-  gtag('config', 'UA-115030099-2');
-</script>
-
-        
+          gtag('config', 'UA-115030099-2');
+        </script>
 
     </head>
     <body>        
@@ -78,6 +73,7 @@
         </nav>
         </div>
        </header>   
+       
         
 <!--
         <nav id="side">
@@ -103,7 +99,6 @@
         </div>
 -->
 <!--    </div>-->
-    
     
     <section>
    
@@ -261,7 +256,7 @@
             </div> 
              
             <div id="low">
-            <a href="../../PROJECTS/AIGA/aiga.html">
+            <a href="../../PROJECTS/Eggschange/eggschange.html">
                 <img src="../../imgs/thumbnails/eggschange-thumbnail.gif">
               <svg id="dash" height="15" width="15"><line x1="0" y1="0" x2="15" y2="15"/></svg>
 
@@ -273,7 +268,27 @@
             </div>
         </div>
         <footer>© 2020 katie q chen</footer>
-    
-    </body>
+     <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+//            menu: '.nav',
+//            paddingTop: '50px',
+            anchors:['Introduction', 'Gallery'],
+//            sectionsColor: ['#fff', '#4BBFC3']
+//            scrollBar: true,
+//            afterRender: function(){
+//              new WOW().init();
+            
+             lazyLoading: true,
+            responsiveWidth: 1000,
+            afterResponsive: function(isResponsive){
+                
+            }
+//            
+        });
+        
+        
+        </script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    </body>
 </html>
